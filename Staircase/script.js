@@ -1,6 +1,5 @@
 function imprimirEscalera(n) {
     for(let i = 0; i< n; i++) { //Me paro en una fila
-        let resultadoFila = "";
         let espaciosFila = "";
         let numeralesFila = "";
 
@@ -9,9 +8,7 @@ function imprimirEscalera(n) {
         
         //Completar la fila con #
         numeralesFila = stringConSimbolo(i+1, "#");
-
-        resultadoFila = espaciosFila + numeralesFila;
-        console.log(resultadoFila);
+        console.log(espaciosFila + numeralesFila);
     }
 
 }
@@ -22,8 +19,7 @@ function stringConSimbolo(n, simbolo) {
     for(let i = 0; i < n; i++) {
         resultado += simbolo;
     }
-
     return resultado;
 }
 
-imprimirEscalera(4);
+imprimirEscalera(20);
